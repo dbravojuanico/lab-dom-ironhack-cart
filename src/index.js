@@ -38,7 +38,8 @@ function removeProduct(event) {
 // ITERATION 5
 
 function createProduct() {
-  //... your code goes here
+  console.log("create button is pressed")
+  const newProduct = document.createElement("tr")
 }
 
 window.addEventListener('load', () => {
@@ -49,4 +50,7 @@ window.addEventListener('load', () => {
   removeProductBtn.forEach((currentButton) => {
     currentButton.addEventListener('click', removeProduct);
   } )
+
+  const createProductBtn = document.getElementById('create');
+  createProductBtn.addEventListener('click', createProduct)
 });
